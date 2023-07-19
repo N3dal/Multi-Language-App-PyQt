@@ -19,6 +19,11 @@ from PyQt6.QtWidgets import *
 from PyQt6 import uic
 from sys import argv
 
+LANGUAGES = [
+    "English",
+    "العربية",
+    "French"
+]
 
 class MainWindow(QMainWindow):
     """
@@ -34,6 +39,7 @@ class MainWindow(QMainWindow):
         self.setFixedSize(MainWindow.WIDTH, MainWindow.HEIGHT)
         
         self.language_selector_box = self.findChild(QComboBox, "language_selector_box")
+        self.language_selector_box.addItems(LANGUAGES)
         
         
 def main():
