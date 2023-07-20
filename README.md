@@ -1,1 +1,2 @@
-# Multi Language Program Support PyQt (5 & 6) 
+# Multi Language Support
+Multi-Language program support for PyQt (5 & 6) 
